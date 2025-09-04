@@ -10,8 +10,31 @@ import Layout from "@/layouts/Layout.astro";
 <Layout title="">
   <Container>
     <Hero />
-    <Features />
-    <Logos />
-    <Cta />
+    <Features id="services" />
+    <div id="about" class="py-16">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-8">About Emergent Data Analytics</h2>
+      <p class="text-lg text-slate-600 max-w-3xl">
+        Founded by Craig Simpkins, Emergent Data Analytics brings scientific rigor from environmental research 
+        to business problems, and business efficiency to environmental challenges. We specialize in making 
+        complex data simple and actionable, with particular expertise in environmental and geospatial analytics.
+      </p>
+    </div>
+    <!-- <Logos /> -->
+    <div id="contact" class="py-16 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-8">Let's Work Together</h2>
+      <p class="text-lg text-slate-600 mb-8">
+        Ready to turn your data challenges into opportunities?
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:craig@emergentdata.co.nz" class="text-indigo-600 font-medium">
+          craig@emergentdata.co.nz
+        </a>
+        <span class="hidden sm:inline">|</span>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="text-indigo-600 font-medium">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <!-- <Cta /> -->
   </Container>
 </Layout>
